@@ -18,7 +18,7 @@ func check(e error) {
 
 func main() {
 	// 最简单的读文件形式就是把文件内容全部读取到内存中
-	dat, err := ioutil.ReadFile("/tmp/file")
+	dat, err := ioutil.ReadFile("/tmp/dat")
 	check(err)
 	fmt.Print(string(dat))
 
@@ -52,7 +52,7 @@ func main() {
 	_, err = f.Seek(0, 0)
 	check(err)
 
-	// bufio包提供了缓冲读取，通常很有用。当有很多小而碎的读取时能提升效率，并且它还提供了一些其他的读取方法
+	// bufio包提供了缓冲读取，通常很有用。当有很多小而零碎的读取时能提升效率，并且它还提供了一些其他的读取方法
 	r4 := bufio.NewReader(f)
 	b4, err := r4.Peek(5)
 	check(err)
