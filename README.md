@@ -1,2 +1,2 @@
 # gobyexample
-A series code snippets Translate from [gobyexample.com](https://gobyexample.com/).
+A series code snippets translate from [gobyexample.com](https://gobyexample.com/).
